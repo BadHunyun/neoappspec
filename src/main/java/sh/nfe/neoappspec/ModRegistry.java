@@ -21,10 +21,10 @@ public class ModRegistry {
                 INK_CELL_64K = inkCellItem("ink_cell_64k", StorageTier.SIZE_64K),
                 INK_CELL_256K = inkCellItem("ink_cell_256k", StorageTier.SIZE_256K),
                 PORTABLE_INK_CELL_1K = portableCellItem("portable_cell_1k", StorageTier.SIZE_1K),
-                PORTABLE_INK_CELL_4K = portableCellItem("portable_cell_1k", StorageTier.SIZE_4K),
-                PORTABLE_INK_CELL_16K = portableCellItem("portable_cell_1k", StorageTier.SIZE_16K),
-                PORTABLE_INK_CELL_64K = portableCellItem("portable_cell_1k", StorageTier.SIZE_64K),
-                PORTABLE_INK_CELL_256K = portableCellItem("portable_cell_1k", StorageTier.SIZE_256K);
+                PORTABLE_INK_CELL_4K = portableCellItem("portable_cell_4k", StorageTier.SIZE_4K),
+                PORTABLE_INK_CELL_16K = portableCellItem("portable_cell_16k", StorageTier.SIZE_16K),
+                PORTABLE_INK_CELL_64K = portableCellItem("portable_cell_64k", StorageTier.SIZE_64K),
+                PORTABLE_INK_CELL_256K = portableCellItem("portable_cell_256k", StorageTier.SIZE_256K);
 
         private static DeferredHolder<Item, Item> inkCellItem(String id, StorageTier tier) {
             return ITEM_REGISTER.register(id, () -> inkCell(tier));

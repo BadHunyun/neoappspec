@@ -1,0 +1,13 @@
+{
+  "item.neo_app_spec.ink_cell_housing": "ME Ink Cell Housing",
+  "item.neo_app_spec.ink_cell_1k": "1k ME Ink Storage Cell",
+  "item.neo_app_spec.ink_cell_4k": "4k ME Ink Storage Cell",
+  "item.neo_app_spec.ink_cell_16k": "16k ME Ink Storage Cell",
+  "item.neo_app_spec.ink_cell_64k": "64k ME Ink Storage Cell",
+  "item.neo_app_spec.ink_cell_256k": "256k ME Ink Storage Cell",
+  "item.neo_app_spec.portable_ink_cell_1k": "1k Portable Ink Cell",
+  "item.neo_app_spec.portable_ink_cell_4k": "4k Portable Ink Cell",
+  "item.neo_app_spec.portable_ink_cell_16k": "16k Portable Ink Cell",
+  "item.neo_app_spec.portable_ink_cell_64k": "64k Portable Ink Cell",
+  "item.neo_app_spec.portable_ink_cell_256k": "256k Portable Ink Cell"
+}

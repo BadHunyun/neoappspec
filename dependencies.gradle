@@ -22,10 +22,17 @@ repositories {
     maven {
         name = "Modmaven"
         url = uri("https://modmaven.dev/")
+        content {
+            includeGroup "maven.modrinth"
+        }
     }
 }
 
 dependencies {
     implementation "org.appliedenergistics:appliedenergistics2:${ae2_version}"
     implementation "maven.modrinth:spectrum:${spectrum_version}"
+
+    runtimeOnly "maven.modrinth:revelationary:1.5.0+1.21.1"
+    runtimeOnly "maven.modrinth:modonomicon:1.21.1-1.120.3"
+    runtimeOnly "maven.modrinth:curios:9.5.1+1.21.1"
 }

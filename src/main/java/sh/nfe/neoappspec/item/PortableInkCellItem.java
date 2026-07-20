@@ -1,14 +1,12 @@
 package sh.nfe.neoappspec.item;
 
 import appeng.api.implementations.menuobjects.IPortableTerminal;
-import appeng.api.stacks.AEKeyType;
 import appeng.items.storage.StorageTier;
 import appeng.items.tools.powered.PortableCellItem;
 import appeng.menu.implementations.MenuTypeBuilder;
 import appeng.menu.me.common.MEStorageMenu;
 import de.dafuqs.spectrum.api.energy.InkStorage;
 import de.dafuqs.spectrum.api.energy.InkStorageItem;
-import net.minecraft.core.component.DataComponentMap;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.ItemStack;
 import sh.nfe.neoappspec.ink.BasicCellInventoryInkStorage;
@@ -36,6 +34,6 @@ public class PortableInkCellItem extends PortableCellItem implements InkStorageI
     @Override
     public void setEnergyStorage(ItemStack itemStack, InkStorage storage) {
         if (storage instanceof BasicCellInventoryInkStorage basicCellInventoryInkStorage)
-            itemStack.applyComponents((DataComponentMap) basicCellInventoryInkStorage.getItemStack().getTags());
+            itemStack.applyComponents(basicCellInventoryInkStorage.getItemStack().getComponentsPatch());
     }
 }
