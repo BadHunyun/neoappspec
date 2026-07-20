@@ -1,0 +1,31 @@
+repositories {
+    mavenCentral()
+    mavenLocal()
+
+    maven {
+        name = 'ParchmentMC'
+        url = 'https://maven.parchmentmc.org'
+    }
+
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
+
+    maven {
+        name = "Modmaven"
+        url = uri("https://modmaven.dev/")
+    }
+}
+
+dependencies {
+    implementation "org.appliedenergistics:appliedenergistics2:${ae2_version}"
+    implementation "maven.modrinth:spectrum:${spectrum_version}"
+}
